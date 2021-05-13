@@ -32,7 +32,7 @@
   font-weight: 100;
   font-size: 2em;
   font-family: 'Helvetica Neue', 'Yu Gothic', 'Meiryo', sans-serif;
-  color: #535353;
+  color: #33272a;
 }
 
 .pace.pace-inactive {
@@ -42,7 +42,7 @@
 .pace-progress-inner {
   width: 40px;
   height: 40px;
-  background-color: #904669;
+  background-color: #ff8ba7;
   margin: 0 auto;
   -webkit-animation-name: sk-rotateplane;
           animation-name: sk-rotateplane;

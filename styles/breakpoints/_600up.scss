@@ -9,10 +9,13 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 }
 
 .houses {
-    &__item {
-        flex-basis: 50%;
-        margin-bottom: 60px;
-    }
+  &__inner {
+    justify-content: space-between;
+  }
+  &__item {
+      flex-basis: 49%;
+      margin-bottom: 60px;
+  }
 }
 
 .popular {

@@ -44,6 +44,7 @@ img {
   font-weight: 600;
   margin-bottom: 0;
   display: block;
+  color: $cMainTitle;
 }
 .sub-title {
   @extend .font-sm;
@@ -68,7 +69,7 @@ main {
 }
 
 #container {
-  background-color: $cWhite;
+  background-color: $cBackground;
   position: relative;
   z-index: 10;
   transition: transform 0.5s, box-shadow 0.5s;
@@ -127,13 +128,13 @@ main {
 
 .travel {
   @extend .content-width;
-  @extend .mb-lg;
+  @extend .mb-sm;
 
   &__inner {
     @extend .flex;
     justify-content: space-between;
     padding: 15px;
-    background-color: $cBgGray;
+    background-color: $cBackcontent;
     position: relative;
     z-index: 0;
   }
@@ -271,7 +272,7 @@ main {
   }
 
   &__world {
-    color: $cWineRed;
+    color: $cHeaderYUYA;
   }
 }
 
