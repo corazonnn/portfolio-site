@@ -47,8 +47,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, calc(-50% + 20px));
-    color: $cWhite;
+    color: #33272a;
+    background-color: rgba( 245, 245, 245, 0.55 );;
     font-size: 25px;
+    text-align: center;
     z-index: 2;
     opacity: 0;
     transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;

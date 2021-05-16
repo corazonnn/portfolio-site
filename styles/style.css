@@ -333,8 +333,10 @@
   left: 50%;
   -webkit-transform: translate(-50%, calc(-50% + 20px));
           transform: translate(-50%, calc(-50% + 20px));
-  color: white;
+  color: #33272a;
+  background-color: rgba(245, 245, 245, 0.55);
   font-size: 25px;
+  text-align: center;
   z-index: 2;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease 1s, -webkit-transform 0.3s ease 1s;
@@ -1116,7 +1118,6 @@ main {
 .header__li > a {
   color: black;
   text-decoration: none !important;
-  text-transform: uppercase;
 }
 
 .header .logo {

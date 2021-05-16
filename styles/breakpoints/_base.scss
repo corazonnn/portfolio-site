@@ -109,7 +109,7 @@ main {
     & > a {
       color: $cBlack;
       text-decoration: none !important;
-      text-transform: uppercase;
+      // text-transform: uppercase;
     }
   }
 
@@ -141,7 +141,6 @@ main {
 
   &__title {
     position: relative;
-
     @include p-base(
       $display: none,
       $width: 100px,
