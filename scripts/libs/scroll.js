@@ -1,9 +1,9 @@
 class ScrollObserver {
-    constructor(els, cb, options) {
-        this.els = document.querySelectorAll(els);
+    constructor(els, cb, options) {//初期化
+        this.els = document.querySelectorAll(els);//監視対象として入ってきた要素を取ってこい
         const defaultOptions = {
             root: null,
-            rootMargin: "0px",
+            rootMargin: "0px",//監視対象からどれくらい外側が見えたら発火するのか
             threshold: 0,
             once: true
         };
@@ -13,14 +13,14 @@ class ScrollObserver {
         this._init();
     }
     _init() {
-        const callback = function (entries, observer) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    this.cb(entry.target, true);
-                    if(this.once) {
+        const callback = function (entries, observer) {//entriesには入ってきた監視対象プロパティが続々とくる。observerはよくわからんがunobserveメソッドとかメソッドを呼び出すのに必要っぽい
+            entries.forEach(entry => {//監視対象のclassをループする
+                if (entry.isIntersecting) {//もし画面に入ってきたなら
+                    this.cb(entry.target, true);//main.jsの監視対象の次の第二引数に入っているコールバック関数に(監視対象のDOM、と画面にはいてきたかどうか)を渡す
+                    if(this.once) {//もし {once: true}なら一度きりの実行なのでunobserveしてもう二度とアニメーションはさせないようにする
                         observer.unobserve(entry.target);
                     }
-                } else {
+                } else {//出た時
                     this.cb(entry.target, false);
                 }
             });

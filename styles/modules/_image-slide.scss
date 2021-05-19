@@ -81,7 +81,7 @@
   }
 }
 
-.hover-darken {
+.hover-darken {//最初はただあるだけだけど,hoverされたタイミングでbackgroundcolorがgrayになるから膜を覆う感じになる.beforeを使ったほうがhtmlを汚すことなく書くことができていい感じ
   &::before {
     content: "";
     position: absolute;

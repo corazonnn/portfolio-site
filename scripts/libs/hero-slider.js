@@ -4,7 +4,7 @@ class HeroSlider {
         this.swiper = this._initSwiper();
     }
 
-    _initSwiper() {
+    _initSwiper() {//swipwer.jsというライブラリを使っているからこの中身についてはガッツリ見る必要はないかも。こんなのもあるんだー的な感じで
         return new Swiper(this.el, {
             // Optional parameters
             // direction: 'vertical',

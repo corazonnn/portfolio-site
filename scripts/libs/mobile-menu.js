@@ -8,7 +8,7 @@ class MobileMenu {
         this._addEvent();
     }
 
-    _getEventType() {
+    _getEventType() {//スマホから見ているのかパソコンで見ているのかで場合分けする
         return window.ontouchstart ? 'touchstart' : 'click';
     }
 
